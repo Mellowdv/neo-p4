@@ -1,1 +1,1 @@
-print("Hi mom!")
+print(os.getenv("P4USER"))
