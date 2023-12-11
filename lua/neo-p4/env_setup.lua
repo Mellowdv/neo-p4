@@ -1,5 +1,0 @@
-local p4_user = os.getenv("P4USER")
-local json_info = io.popen("p4 -Mj -z tag info"):read("a")
-local _, _, p4_client = string.find(json_info, "\"clientName\":\"(%a+)\",")
-print(p4_user)
-print(p4_client)
